@@ -1,0 +1,383 @@
+#nino-Timeline {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 min-height: 100vh;
+	 padding: 4rem 0;
+	 font-family: -system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+ #nino-Timeline.scheduleContainer {
+	 display: grid;
+	 grid-gap: 0.2rem;
+	 grid-template-columns: 5rem repeat(4, 1fr);
+	 grid-template-rows: repeat(28, 1fr);
+	 grid-template-areas: "time800 stage stage stage stage" "time830 stage stage stage stage" "time900 stage stage stage stage" "time930 stage stage stage stage" "time1000 stage stage stage stage" "time1030 stage stage stage stage" "time1100 stage stage stage stage" "time1130 stage stage stage stage" "time1200 stage stage stage stage" "time1230 stage stage stage stage" "time1300 stage stage stage stage" "time1330 stage stage stage stage" "time1400 stage stage stage stage" "time1430 stage stage stage stage" "time1500 stage stage stage stage" "time1530 stage stage stage stage" "time1600 stage stage stage stage" "time1630 stage stage stage stage" "time1700 stage stage stage stage" "time1730 stage stage stage stage" "time1800 stage stage stage stage" "time1830 stage stage stage stage" "time1900 stage stage stage stage" "time1930 stage stage stage stage" "time2000 stage stage stage stage" "time2030 stage stage stage stage" "time2100 stage stage stage stage" "time2130 stage stage stage stage";
+}
+/** * Time */
+ #nino-Timeline.time {
+	 display: flex;
+	 align-items: center;
+	 justify-content: flex-end;
+	 border-top: thin dotted #ccc;
+	 height: 100%;
+	 padding: 0 0.5rem;
+}
+ #nino-Timeline.time.start-800 {
+	 grid-area: time800;
+}
+#nino-Timeline .time.start-830 {
+	 grid-area: time830;
+}
+#nino-Timeline .time.start-900 {
+	 grid-area: time900;
+}
+#nino-Timeline .time.start-930 {
+	 grid-area: time930;
+}
+ #nino-Timeline.time.start-1000 {
+	 grid-area: time1000;
+}
+ #nino-Timeline.time.start-1030 {
+	 grid-area: time1030;
+}
+#nino-Timeline .time.start-1100 {
+	 grid-area: time1100;
+}
+#nino-Timeline .time.start-1130 {
+	 grid-area: time1130;
+}
+#nino-Timeline .time.start-1200 {
+	 grid-area: time1200;
+}
+ #nino-Timeline.time.start-1230 {
+	 grid-area: time1230;
+}
+#nino-Timeline .time.start-1300 {
+	 grid-area: time1300;
+}
+#nino-Timeline .time.start-1330 {
+	 grid-area: time1330;
+}
+ #nino-Timeline.time.start-1400 {
+	 grid-area: time1400;
+}
+#nino-Timeline .time.start-1430 {
+	 grid-area: time1430;
+}
+#nino-Timeline .time.start-1500 {
+	 grid-area: time1500;
+}
+#nino-Timeline .time.start-1530 {
+	 grid-area: time1530;
+}
+#nino-Timeline .time.start-1600 {
+	 grid-area: time1600;
+}
+#nino-Timeline .time.start-1630 {
+	 grid-area: time1630;
+}
+#nino-Timeline .time.start-1700 {
+	 grid-area: time1700;
+}
+#nino-Timeline .time.start-1730 {
+	 grid-area: time1730;
+}
+#nino-Timeline .time.start-1800 {
+	 grid-area: time1800;
+}
+#nino-Timeline .time.start-1830 {
+	 grid-area: time1830;
+}
+ #nino-Timeline.time.start-1900 {
+	 grid-area: time1900;
+}
+ #nino-Timeline.time.start-1930 {
+	 grid-area: time1930;
+}
+#nino-Timeline .time.start-2000 {
+	 grid-area: time2000;
+}
+#nino-Timeline .time.start-2030 {
+	 grid-area: time2030;
+}
+ #nino-Timeline.time.start-2100 {
+	 grid-area: time2100;
+}
+#nino-Timeline .time.start-2130 {
+	 grid-area: time2130;
+}
+ #nino-Timeline.time.start-2200 {
+	 grid-area: time2200;
+}
+#nino-Timeline .time.start-2230 {
+	 grid-area: time2230;
+}
+ #nino-Timeline.time.start-2300 {
+	 grid-area: time2300;
+}
+#nino-Timeline .time.start-2330 {
+	 grid-area: time2330;
+}
+ #nino-Timeline.time.start-0000 {
+	 grid-area: time0000;
+}
+#nino-Timeline .time.start-0030 {
+	 grid-area: time0030;
+}
+ #nino-Timeline.time[class*="30"]:not(.start-1300) {
+	 font-size: 0.8rem;
+	 color: #ccc;
+}
+/** * Event */
+ #nino-Timeline .event {
+	 display: flex;
+	 justify-content: center;
+	 flex-direction: column;
+	 padding: 0.5rem 1rem;
+	 background-color: orange;
+	 border-radius: 0.2rem;
+	 font-size: 0.8rem;
+	 font-weight: bold;
+	 line-height: 1.4;
+}
+ #nino-Timeline .event span {
+	 display: block;
+	 width: 100%;
+	 font-size: 0.8em;
+	 font-weight: normal;
+}
+ #nino-Timeline .event.start-800 {
+	 grid-row-start: time800;
+}
+#nino-Timeline  .event.start-830 {
+	 grid-row-start: time830;
+}
+#nino-Timeline  .event.start-900 {
+	 grid-row-start: time900;
+}
+#nino-Timeline  .event.start-930 {
+	 grid-row-start: time930;
+}
+ #nino-Timeline .event.start-1000 {
+	 grid-row-start: time1000;
+}
+#nino-Timeline  .event.start-1030 {
+	 grid-row-start: time1030;
+}
+#nino-Timeline  .event.start-1100 {
+	 grid-row-start: time1100;
+}
+#nino-Timeline  .event.start-1130 {
+	 grid-row-start: time1130;
+}
+#nino-Timeline  .event.start-1200 {
+	 grid-row-start: time1200;
+}
+#nino-Timeline  .event.start-1230 {
+	 grid-row-start: time1230;
+}
+#nino-Timeline  .event.start-1300 {
+	 grid-row-start: time1300;
+}
+#nino-Timeline  .event.start-1330 {
+	 grid-row-start: time1330;
+}
+#nino-Timeline  .event.start-1400 {
+	 grid-row-start: time1400;
+}
+ #nino-Timeline .event.start-1430 {
+	 grid-row-start: time1430;
+}
+#nino-Timeline  .event.start-1500 {
+	 grid-row-start: time1500;
+}
+#nino-Timeline  .event.start-1530 {
+	 grid-row-start: time1530;
+}
+#nino-Timeline  .event.start-1600 {
+	 grid-row-start: time1600;
+}
+#nino-Timeline  .event.start-1630 {
+	 grid-row-start: time1630;
+}
+ #nino-Timeline .event.start-1700 {
+	 grid-row-start: time1700;
+}
+#nino-Timeline  .event.start-1730 {
+	 grid-row-start: time1730;
+}
+#nino-Timeline  .event.start-1800 {
+	 grid-row-start: time1800;
+}
+ #nino-Timeline .event.start-1830 {
+	 grid-row-start: time1830;
+}
+#nino-Timeline  .event.start-1900 {
+	 grid-row-start: time1900;
+}
+ #nino-Timeline .event.start-1930 {
+	 grid-row-start: time1930;
+}
+ #nino-Timeline .event.start-2000 {
+	 grid-row-start: time2000;
+}
+#nino-Timeline  .event.start-2030 {
+	 grid-row-start: time2030;
+}
+#nino-Timeline  .event.start-2100 {
+	 grid-row-start: time2100;
+}
+ #nino-Timeline .event.start-2130 {
+	 grid-row-start: time2130;
+}
+#nino-Timeline  .event.start-2200 {
+	 grid-row-start: time2200;
+}
+ #nino-Timeline .event.start-2230 {
+	 grid-row-start: time2230;
+}
+#nino-Timeline  .event.start-2300 {
+	 grid-row-start: time2300;
+}
+ #nino-Timeline .event.start-2330 {
+	 grid-row-start: time2330;
+}
+#nino-Timeline  .event.start-0000 {
+	 grid-row-start: time0000;
+}
+ #nino-Timeline .event.start-0030 {
+	 grid-row-start: time0030;
+}
+ #nino-Timeline .event.end-800 {
+	 grid-row-end: time800;
+}
+#nino-Timeline  .event.end-830 {
+	 grid-row-end: time830;
+}
+ #nino-Timeline .event.end-900 {
+	 grid-row-end: time900;
+}
+ #nino-Timeline .event.end-930 {
+	 grid-row-end: time930;
+}
+ #nino-Timeline .event.end-1000 {
+	 grid-row-end: time1000;
+}
+#nino-Timeline  .event.end-1030 {
+	 grid-row-end: time1030;
+}
+#nino-Timeline  .event.end-1100 {
+	 grid-row-end: time1100;
+}
+#nino-Timeline  .event.end-1130 {
+	 grid-row-end: time1130;
+}
+ #nino-Timeline .event.end-1200 {
+	 grid-row-end: time1200;
+}
+#nino-Timeline  .event.end-1230 {
+	 grid-row-end: time1230;
+}
+#nino-Timeline  .event.end-1300 {
+	 grid-row-end: time1300;
+}
+ #nino-Timeline .event.end-1330 {
+	 grid-row-end: time1330;
+}
+#nino-Timeline  .event.end-1400 {
+	 grid-row-end: time1400;
+}
+ #nino-Timeline .event.end-1430 {
+	 grid-row-end: time1430;
+}
+ #nino-Timeline .event.end-1500 {
+	 grid-row-end: time1500;
+}
+ #nino-Timeline .event.end-1530 {
+	 grid-row-end: time1530;
+}
+#nino-Timeline  .event.end-1600 {
+	 grid-row-end: time1600;
+}
+#nino-Timeline  .event.end-1630 {
+	 grid-row-end: time1630;
+}
+#nino-Timeline  .event.end-1700 {
+	 grid-row-end: time1700;
+}
+#nino-Timeline  .event.end-1730 {
+	 grid-row-end: time1730;
+}
+ #nino-Timeline .event.end-1800 {
+	 grid-row-end: time1800;
+}
+#nino-Timeline  .event.end-1830 {
+	 grid-row-end: time1830;
+}
+#nino-Timeline .event.end-1900 {
+	 grid-row-end: time1900;
+}
+ #nino-Timeline .event.end-1930 {
+	 grid-row-end: time1930;
+}
+#nino-Timeline  .event.end-2000 {
+	 grid-row-end: time2000;
+}
+#nino-Timeline  .event.end-2030 {
+	 grid-row-end: time2030;
+}
+#nino-Timeline  .event.end-2100 {
+	 grid-row-end: time2100;
+}
+#nino-Timeline  .event.end-2130 {
+	 grid-row-end: time2130;
+}
+#nino-Timeline  .event.end-2200 {
+	 grid-row-end: time2200;
+}
+#nino-Timeline  .event.end-2230 {
+	 grid-row-end: time2230;
+}
+#nino-Timeline  .event.end-2300 {
+	 grid-row-end: time2300;
+}
+#nino-Timeline  .event.end-2330 {
+	 grid-row-end: time2330;
+}
+#nino-Timeline  .event.end-0000 {
+	 grid-row-end: time0000;
+}
+#nino-Timeline  .event.end-0030 {
+	 grid-row-end: time0030;
+}
+#nino-Timeline  .event.length-1 {
+	 grid-column-end: span 1;
+}
+#nino-Timeline  .event.length-2 {
+	 grid-column-end: span 2;
+}
+#nino-Timeline  .event.length-3 {
+	 grid-column-end: span 3;
+}
+#nino-Timeline  .event.length-4 {
+	 grid-column-end: span 4;
+}
+ #nino-Timeline .event.stage-earth {
+	 background-color: #ffa726;
+}
+ #nino-Timeline .event.stage-mercury {
+	 background-color: #9ccc65;
+}
+#nino-Timeline  .event.stage-venus {
+	 background-color: #ff8a65;
+}
+#nino-Timeline  .event.stage-mars {
+	 background-color: #b3e5fc;
+}
+#nino-Timeline  .event.stage-jupiter {
+	 background-color: #81d4fa;
+}
+#nino-Timeline  .event.stage-saturn {
+	 background-color: #26c6da;
+}
+ 
