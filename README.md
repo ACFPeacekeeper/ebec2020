@@ -6,4 +6,4 @@ Website for the 2020 European BEST Engineering Competition (EBEC), organized by 
 - [JS - JavaScript Programming Language](https://www.javascript.com/)
 - [Bootstrap - HTML, CSS and JS Library](https://getbootstrap.com/)
 - [Node.js - Open-source JavaScript Runtime Environment](https://nodejs.org/en)
-- [npm - Package manager for JavaScript](https://www.npmjs.com/package/npm)
+- [npm - Package Manager for JavaScript](https://www.npmjs.com/package/npm)
